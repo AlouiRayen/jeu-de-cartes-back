@@ -1,6 +1,7 @@
 package com.example.jeudecartes.Resources;
 
 import com.example.jeudecartes.Models.Card;
+import com.example.jeudecartes.Models.Order;
 import com.example.jeudecartes.Services.CardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -19,4 +20,10 @@ public class CardResource {
     public ResponseEntity<List<Card>> dealCards(){
         return ResponseEntity.ok(cardService.CreateDeck());
     }
+
+    @PostMapping("/sort")
+    public ResponseEntity<List<Card>> sortCards(@RequestBody Order order){
+        return ResponseEntity.ok(cardService.sortCards(order));
+    }
+
 }
