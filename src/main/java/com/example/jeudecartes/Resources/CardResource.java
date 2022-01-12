@@ -6,7 +6,6 @@ import com.example.jeudecartes.Services.CardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController()
@@ -20,7 +19,6 @@ public class CardResource {
     public ResponseEntity<List<Card>> dealCards(){
         return ResponseEntity.ok(cardService.CreateDeck());
     }
-
     @PostMapping("/sort")
     public ResponseEntity<List<Card>> sortCards(@RequestBody Order order){
         return ResponseEntity.ok(cardService.sortCards(order));
