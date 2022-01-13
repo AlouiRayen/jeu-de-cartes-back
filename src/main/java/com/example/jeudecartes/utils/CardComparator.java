@@ -1,7 +1,7 @@
-package com.example.jeudecartes.Utils;
+package com.example.jeudecartes.utils;
 
-import com.example.jeudecartes.Models.Card;
-import com.example.jeudecartes.Models.Order;
+import com.example.jeudecartes.models.Card;
+import com.example.jeudecartes.models.Order;
 
 import java.util.Comparator;
 
