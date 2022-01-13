@@ -1,8 +1,8 @@
-package com.example.jeudecartes.Resources;
+package com.example.jeudecartes.resources;
 
-import com.example.jeudecartes.Models.Card;
-import com.example.jeudecartes.Models.Order;
-import com.example.jeudecartes.Services.CardService;
+import com.example.jeudecartes.models.Card;
+import com.example.jeudecartes.models.Order;
+import com.example.jeudecartes.services.CardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,10 +1,8 @@
-package com.example.jeudecartes.Resources;
+package com.example.jeudecartes.resources;
 
-import com.example.jeudecartes.Models.Card;
-import com.example.jeudecartes.Models.Order;
-import com.example.jeudecartes.Services.CardService;
+import com.example.jeudecartes.models.Card;
+import com.example.jeudecartes.services.CardService;
 import org.hamcrest.Matchers;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -22,7 +20,6 @@ import org.springframework.web.context.WebApplicationContext;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
 public class CardResourceTest  {

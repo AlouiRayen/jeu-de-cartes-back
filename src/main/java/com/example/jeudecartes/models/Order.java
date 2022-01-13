@@ -1,4 +1,4 @@
-package com.example.jeudecartes.Models;
+package com.example.jeudecartes.models;
 
 import java.io.Serializable;
 import java.util.List;

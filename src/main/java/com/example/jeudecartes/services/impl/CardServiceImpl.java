@@ -1,10 +1,11 @@
-package com.example.jeudecartes.Services.Impl;
+package com.example.jeudecartes.services.impl;
 
-import com.example.jeudecartes.Models.Card;
-import com.example.jeudecartes.Models.Order;
-import com.example.jeudecartes.Services.CardService;
-import com.example.jeudecartes.Utils.CardComparator;
-import com.example.jeudecartes.Utils.Constants;
+import com.example.jeudecartes.models.Card;
+import com.example.jeudecartes.models.Order;
+import com.example.jeudecartes.services.CardService;
+import com.example.jeudecartes.utils.CardComparator;
+import com.example.jeudecartes.utils.Color;
+import com.example.jeudecartes.utils.Constants;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -21,7 +22,7 @@ public class CardServiceImpl implements CardService {
         List<Card> cardList = new ArrayList<>();
         for (int i=0; i<10; i++){
             String value = Constants.VALUES.get(random.nextInt(Constants.VALUES.size()));
-            String color = Constants.COLORS.get(random.nextInt(Constants.COLORS.size()));
+            String color = Color.getRandomColor();
             Card card = new Card(color,value);
             cardList.add(card);
             this.currentCardsList=cardList;
